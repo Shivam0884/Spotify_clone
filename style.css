@@ -1,0 +1,512 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: white;
+    overflow:hidden;
+    padding: 8px 8px;
+}
+.main{
+    height:100vh;
+    display: flex;
+}
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 0.5rem;/*1rem=16px*/
+    margin-right:0.5rem ;
+    height: 663.2px;
+}
+.main_content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 0.5rem;
+    padding-left: 1.5rem;
+    overflow: scroll;
+    margin-bottom: 4rem;
+    margin-right: 0rem;
+    height: 663.2px;
+    overflow-x: hidden;
+}
+.music_player{
+    background-color:black;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.75rem 0.75rem;
+}
+.nav-option{
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.25rem;
+}
+.nav-option i{
+    cursor: pointer;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+    padding: 10px;
+}
+.nav-option a{
+    font-size: 1rem;
+}
+.lib-option img{
+    height:1.25rem;
+    width: 1.25rem;
+}
+.library{
+    background-color: #121212;
+    border-radius:0.5rem ;
+    height: 510px;
+    margin-top: 0.75rem;
+     padding: 0.5rem 0rem; 
+     
+}
+.option{
+    display: flex;
+}
+.lib-option{
+      padding: 0.75rem;  
+      display: flex;
+     opacity: 0.5;
+     padding-left: 20px;
+}
+.icon{
+    display: flex;
+    padding-top: 1rem ;
+    padding-left: 110px;
+}
+.icon1{
+    padding-right: 1.25rem;
+    opacity: 0.5;
+}
+.icon2{
+    opacity: 0.5;
+}
+.lib-option a{
+    padding-left: 0.75rem;
+}
+.lib-option:hover{
+    opacity: 1;
+}
+.icon1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.icon2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.lib-option .img:hover{
+    cursor: pointer;
+}
+.box1{
+    height: 120px;
+    border-radius: 0.75rem;
+    margin: 0.75rem;
+    padding: 20px 20px;
+    background-color: rgb(48, 46, 46);
+}
+.box-p1{
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.box-p2{
+    margin-bottom: 1.75rem;
+    opacity: 0.7;
+}
+.badges{
+   border-radius:100px;
+   font-weight: 700;
+   background-color: white;
+   border: none;
+   height: 1.75rem;
+   cursor: pointer;
+}
+.box2{
+    height: 160px;
+    border-radius: 0.75rem;
+    margin: 0.75rem;
+    margin-top: 1.25rem;
+    padding: 20px 20px;
+    background-color: rgb(48, 46, 46);
+}
+.box2-p1{
+    margin-bottom: 1.25rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+.box2-p2{
+    margin-bottom: 1.75rem;
+    opacity: 0.7;
+}
+.badge{
+   border-radius:100px;
+   font-weight: 700;
+   background-color: white;
+   border: none;
+   height: 1.75rem;
+   margin-bottom: 0.5rem;
+   cursor: pointer;
+}
+.sticky_nav{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 15px 0px;
+}
+.arrow{
+    font-size: 1.75rem;
+    opacity: 0.4;
+}
+.arrow i{
+    padding: 0px 0.25rem;
+    cursor: pointer;
+}
+
+.badge_nav{
+    padding: 0px 0.5rem;
+    margin-right: 1rem;
+}
+.install{
+    border-radius: 120px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    height: 1.75rem;
+    padding: 0px 1rem;
+    font-weight:700 ;
+}
+.install i{
+    padding-right: 0.25rem;
+}
+.install{
+    cursor: pointer;
+}
+.man{
+    cursor: pointer;
+}
+.explore{
+    border-radius: 100px;
+    border: none;
+    font-weight: 700;
+    height:1.75rem ;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color:#232323;
+    width: 200px;
+    border-radius: 1rem;
+   padding: 1rem;
+   height: 280px;
+   margin-top: 1rem;
+}
+.card img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.title{
+    font-weight: 700;
+}
+.card_info{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.cards{
+    display: flex;
+   margin-right: 1rem;
+   flex-wrap: wrap;
+}
+.card2{
+    background-color:#232323;
+    width: 200px;
+    border-radius: 1rem;
+   padding: 1rem;
+   height: 280px;
+   margin-left: 1.5rem;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+.card3{
+    background-color:#232323;
+    width: 200px;
+    border-radius: 1rem;
+   padding: 1rem;
+   height: 280px;
+   margin-left: 1.5rem;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+.card2 img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.card3 img{
+    width: 100%;
+    border-radius: 1rem;
+}
+#heading{
+    margin-top: 2rem;
+}
+.top{
+    display: flex;
+    display: flex;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+}
+.card5{
+    background-color:#232323;
+    width: 200px;
+    border-radius: 1rem;
+   padding: 1rem;
+   height: 280px;
+   margin-top: 1rem;
+   cursor: pointer;
+}
+.card5 img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    height: 1%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+    margin-right: 1.5rem;
+}
+.albums img{
+   height: 65px;
+   width: 65px;
+   border-radius: 0.25rem;
+   margin-left: 1rem;
+   margin-bottom: 2rem;
+}
+.albums{
+    display: flex;
+    text-align: center;
+     height: 72px;
+    padding-bottom: 2rem;
+    width: 25%;
+}
+.school{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+.icon6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.icon6:hover{
+    opacity: 1;
+}
+.emiway{
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 2px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.old{
+    text-decoration: underline;
+    margin-bottom: 0px;
+    font-weight: 700;
+    margin-bottom:2px;
+    cursor: pointer;
+}
+.player{
+    height: 72px;
+    width: 50%;
+    text-align: center;
+}
+.music_player{
+    display: flex;
+    justify-content: center;
+}
+
+.player_controls_icon{
+    height: 14px;
+    
+    margin-bottom: 6px;
+    opacity: 0.5;
+}
+.player_controls_icon3{
+    height: 26px;
+    opacity: 1;
+    cursor: pointer;
+}
+.player_controls{
+   margin-top: 0.5rem;
+
+}
+.playback_bar{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.player_controls_icon:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.progress_bar{
+    width: 70%;
+    appearance: none;
+    background-color: #2c2929;
+    cursor: pointer;
+}
+.progress_bar::-webkit-slider-runnable-track{
+    background-color: rgb(93, 91, 91);
+   border-radius: 100px;
+   height: 0.2rem;
+   
+}
+.progress_bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.75rem;
+    width: 0.75rem;
+    background-color:#fdfffe;
+    border-radius: 50%;
+    margin-top: -4px;
+}
+.controls{
+    width: 25%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+}
+.control_icon1{
+    display: flex;
+    height: 2.25rem;
+    padding-right: 10px;
+    opacity: 0.6;
+}
+.control_icon2{
+    display: flex;
+    height: 2.25rem;
+    padding-right: 10px;
+    opacity: 0.6;
+}
+.control_icon3{
+    display: flex;
+    height: 1.25rem;
+    padding-right: 10px;
+    opacity: 0.6;
+}
+.control_icon4{
+    display: flex;
+    height: 1rem;
+    padding-right: 10px;
+    opacity: 0.6;
+}
+.control_icon5{
+    display: flex;
+    height: 2.5rem;
+    padding-right: 10px;
+    opacity: 0.6;
+}
+.volume{
+    width:100px;
+}
+.volume::-webkit-slider-runnable-track{
+    background-color:white;
+    border-radius: 100px;
+    height:0.2rem;
+    cursor: pointer;
+}
+.volume::-webkit-slider-thumb{
+appearance: none;
+display: none;
+}
+.control_icon1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.control_icon2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.control_icon3:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.control_icon4:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.control_icon5:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.control_icon6{
+    display: flex;
+    height: 2.5rem;
+    padding-left: 10px;
+    opacity: 0.6;
+}
+.control_icon6:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.card:hover{
+    cursor: pointer;
+}
+.controls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
